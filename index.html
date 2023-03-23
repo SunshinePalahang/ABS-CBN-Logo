@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device - width, initial - scale = 1.0">
+		<title>ABS-CBN</title>
+	</head>
+	<body>
+		<canvas id = "drawing" width = "1475" height = "730">
+		This browser does not support the HTML5 canvas tag.
+		</canvas>
+		<script type = "text/javascript">
+				const canvas = document.getElementById("drawing");
+				const content = canvas.getContext("2d");
+				
+				content.beginPath();
+				content.arc(738, 326, 200, 0.5 * Math.PI, 2.5 * Math.PI);
+				content.fillStyle = "#ec1c24";
+				content.fill();
+				
+				content.beginPath();
+				content.arc(738, 326, 175, 0.5 * Math.PI, 2.5 * Math.PI);
+				content.fillStyle = "white";
+				content.fill();
+				
+				content.beginPath();
+				content.arc(738, 326, 150, 0.5 * Math.PI, 2.5 * Math.PI);
+				content.fillStyle = "#0d6e3d";
+				content.fill();
+				
+				content.beginPath();
+				content.arc(738, 326, 125, 0.5 * Math.PI, 2.5 * Math.PI);
+				content.fillStyle = "white";
+				content.fill();
+				
+				content.beginPath();
+				content.arc(738, 326, 100, 0.5 * Math.PI, 2.5 * Math.PI);
+				content.fillStyle = "#0464b4";
+				content.fill();
+				
+				content.beginPath();
+				content.arc(738, 326, 75, 0.5 * Math.PI, 2.5 * Math.PI);
+				content.fillStyle = "white";
+				content.fill();
+				
+				content.clearRect(706, 316, 60, 500);
+				content.fillStyle = "black";
+				content.fillRect(711, 331, 50, 210);
+				
+				content.font = "1000 100px Times ";
+				content.fillText("ABS-CBN", 525, 625);
+		</script>
+	</body>
+</html>
